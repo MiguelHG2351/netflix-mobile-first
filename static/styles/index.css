@@ -1,0 +1,203 @@
+@font-face {
+    font-family: 'Netflix';
+    src: url('../../fonts/AvenirNextLTPro-Bold.otf');
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    font-family: 'Netflix';
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #333;
+}
+
+.header-site {
+    position: sticky;
+    top: 0;
+    padding: 16px;
+    background-color: #000;
+}
+
+
+.logo img {
+    height: 40px;
+}
+
+
+/* logo-peli | logo */
+
+.navigation {
+    position: absolute;
+    top: 0;
+    width: -webkit-fill-available;
+    display: inline-block;
+    background-image: linear-gradient(to bottom, #111 0, #333 25%, transparent 100%);
+    z-index: 5;
+}
+
+.list-navigation {
+    display: flex;
+    padding-left: 0;
+    justify-content: space-evenly;
+}
+
+.list-item {
+    list-style: none;
+    color: #fff;
+    padding: 12px;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+
+/* logo-peli | features-actions */
+
+.features-actions {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    bottom: 2px;
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px 0;
+}
+
+/* logo-peli | features-actions | list */
+
+.features-list {
+    display: flex;
+    margin: 0 auto;
+    cursor: pointer;
+    justify-content: space-evenly;
+    color: #fff;
+    padding-left: 0;
+    width: -webkit-fill-available;
+}
+
+.features-item:first-child::before {
+    content: '';
+    display: none;
+}
+
+.features-item {
+    font-size: 12px;
+    list-style: none;
+    font-family: 'Roboto';
+}
+
+.features-item::before {
+    content: '•';
+    font-family: 'Netflix';
+    padding: 8px;
+    font-size: 12px;
+}
+
+/* logo-peli | features-actions | options */
+.features-options {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    transition: transform 0.18s ease;
+}
+
+/* images btn */
+.images-btn img {
+    vertical-align: bottom;
+}
+
+.btn:hover {
+    transform: scale(0.91);
+}
+
+/* btn-primary */
+
+.btn-primary {
+    background-color: transparent;
+    color: #fff;
+    
+}
+/* btn-secondary */
+
+.btn-secondary {
+    border-radius: 4px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 8px 22px;
+    height: fit-content;
+}
+
+/* logo-peli | logo */
+
+.video-peli {
+    position: relative;
+}
+
+.responsive-video {
+    max-width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+/* section list */
+.section-list {
+    display: flex;
+    flex-direction: column;
+    gap: 11px 0;
+}
+
+/* list container */
+
+.list-container {
+    display: flex;
+    overflow-x: auto;
+    padding: 0 1em;
+    gap: 0 12px;
+}
+
+.list-title {
+    color: #fff;
+    padding: 12px;
+}
+
+.list-title h2 {
+    user-select: none;
+}
+
+.list-element img {
+    width: 27vw;
+    height: auto;
+}
+
+/* Footer */
+
+.footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #000;
+}
+
+.footer button {
+    padding: 21px;
+    background-color: transparent;
+    color: #fff;
+    flex: 0.25;
+}
+
+
+/* layout shift */
+/* features actions */
