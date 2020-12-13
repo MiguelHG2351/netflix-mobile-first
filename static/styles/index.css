@@ -198,21 +198,22 @@ body {
     background-color: transparent;
     color: #646464;
     flex: 0.25;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .footer button:first-child {
     color: #fff;
 }
 
-.btn-image svg path {
+.btn svg path {
     fill: #646464;
 }
 
-.footer button:hover {
+.footer .btn:hover :is(path, span) {
     color: #fff;
-}
-
-.footer button:hover:is(svg) {
     fill: #fff;
 }
 
@@ -221,18 +222,23 @@ body {
     .responsive-video {
         height: 380px;
     }
-
+    
     .features-item {
         font-size: 8px;
         
     }
-
+    
     .footer button {
         font-size: 8px;
     }
-    
-
 }
+
+@media screen and (max-width: 400px) {
+    .responsive-video {
+        height: 280px;
+    }
+}
+
 
 /* layout shift */
 /* features actions */
