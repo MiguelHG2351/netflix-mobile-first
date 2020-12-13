@@ -218,6 +218,10 @@ body {
 
 @media screen and (max-width: 350px) {
 
+    .responsive-video {
+        height: 380px;
+    }
+
     .features-item {
         font-size: 8px;
         
