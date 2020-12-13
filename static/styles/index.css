@@ -216,6 +216,19 @@ body {
     fill: #fff;
 }
 
+@media screen and (max-width: 350px) {
+
+    .features-item {
+        font-size: 8px;
+        
+    }
+
+    .footer button {
+        font-size: 8px;
+    }
+    
+
+}
 
 /* layout shift */
 /* features actions */
