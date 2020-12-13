@@ -19,6 +19,7 @@ body {
     top: 0;
     padding: 16px;
     background-color: #000;
+    z-index: 6;
 }
 
 
@@ -34,7 +35,8 @@ body {
     top: 0;
     width: -webkit-fill-available;
     display: inline-block;
-    background-image: linear-gradient(to bottom, #111 0, #333 25%, transparent 100%);
+    /* background-image: linear-gradient(to bottom, #111 0, #333 25%, transparent 100%); */
+    background-image: linear-gradient(to bottom, rgba(4,4,6,1) 0%, rgba(0,0,0,1) 36%, rgba(80,80,80,1) 75%, transparent 100%);
     z-index: 5;
 }
 
@@ -182,7 +184,7 @@ body {
 /* Footer */
 
 .footer {
-    position: fixed;
+    position: sticky;
     left: 0;
     right: 0;
     bottom: 0;
@@ -192,10 +194,26 @@ body {
 }
 
 .footer button {
-    padding: 21px;
+    padding: 21px 0;
     background-color: transparent;
-    color: #fff;
+    color: #646464;
     flex: 0.25;
+}
+
+.footer button:first-child {
+    color: #fff;
+}
+
+.btn-image svg path {
+    fill: #646464;
+}
+
+.footer button:hover {
+    color: #fff;
+}
+
+.footer button:hover:is(svg) {
+    fill: #fff;
 }
 
 
