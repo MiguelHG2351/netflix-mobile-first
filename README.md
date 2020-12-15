@@ -27,3 +27,10 @@ No se encuentra dentro de Google Fonts pero la encontrar los archivos de la fuen
   src: url('/Arial.ttf');
 }
 ```
+
+# Lista de CSS usado
+
+- mediaquery: 2
+
+- de 0 a 768px se adapta sin problemas ;)
+
