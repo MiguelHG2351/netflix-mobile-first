@@ -34,3 +34,5 @@ No se encuentra dentro de Google Fonts pero la encontrar los archivos de la fuen
 
 - de 0 a 768px se adapta sin problemas ;)
 
+Link del directo: [Video](https://www.youtube.com/watch?v=wZbWiqGC45k)
+
